@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7D1E99342A04FB30008BBA4E /* MultiModuleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E99332A04FB30008BBA4E /* MultiModuleApp.swift */; };
-		7D1E99362A04FB30008BBA4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E99352A04FB30008BBA4E /* ContentView.swift */; };
 		7D1E99382A04FB31008BBA4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1E99372A04FB31008BBA4E /* Assets.xcassets */; };
 		7D1E993B2A04FB31008BBA4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1E993A2A04FB31008BBA4E /* Preview Assets.xcassets */; };
+		7D36DD5D2A04FF3900BF8555 /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 7D36DD5C2A04FF3900BF8555 /* AppFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D1E99302A04FB30008BBA4E /* MultiModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1E99332A04FB30008BBA4E /* MultiModuleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiModuleApp.swift; sourceTree = "<group>"; };
-		7D1E99352A04FB30008BBA4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D1E99372A04FB31008BBA4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D1E993A2A04FB31008BBA4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D1E99412A04FC1E008BBA4E /* MultiModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MultiModule; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D36DD5D2A04FF3900BF8555 /* AppFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +37,9 @@
 			isa = PBXGroup;
 			children = (
 				7D1E99322A04FB30008BBA4E /* MultiModule */,
+				7D1E99412A04FC1E008BBA4E /* MultiModule */,
 				7D1E99312A04FB30008BBA4E /* Products */,
+				7D36DD5B2A04FF3900BF8555 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				7D1E99332A04FB30008BBA4E /* MultiModuleApp.swift */,
-				7D1E99352A04FB30008BBA4E /* ContentView.swift */,
 				7D1E99372A04FB31008BBA4E /* Assets.xcassets */,
 				7D1E99392A04FB31008BBA4E /* Preview Content */,
 			);
@@ -65,6 +67,13 @@
 				7D1E993A2A04FB31008BBA4E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D36DD5B2A04FF3900BF8555 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +92,9 @@
 			dependencies = (
 			);
 			name = MultiModule;
+			packageProductDependencies = (
+				7D36DD5C2A04FF3900BF8555 /* AppFeature */,
+			);
 			productName = MultiModule;
 			productReference = 7D1E99302A04FB30008BBA4E /* MultiModule.app */;
 			productType = "com.apple.product-type.application";
@@ -137,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D1E99362A04FB30008BBA4E /* ContentView.swift in Sources */,
 				7D1E99342A04FB30008BBA4E /* MultiModuleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +350,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D36DD5C2A04FF3900BF8555 /* AppFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D1E99282A04FB30008BBA4E /* Project object */;
 }
